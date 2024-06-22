@@ -1,6 +1,5 @@
 import { FC, ReactNode, useEffect, useMemo, useRef, useState } from 'react'
-import { Flex, List } from 'antd'
-import Typography from 'antd/es/typography/Typography'
+import { Flex, List, Typography } from 'antd'
 
 type VirtualListProps = {
     // TODO: исправить типизацию пропсов
@@ -51,6 +50,7 @@ const VirtualList: FC<VirtualListProps> = ({ columns, data, itemHeight, boxHeigh
                 )}
             </Flex>
             <div
+                data-testid="scroll-cont"
                 ref={ref}
                 style={{
                     height: boxHeight + 'px',
