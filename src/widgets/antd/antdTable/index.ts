@@ -1,0 +1,1 @@
+export { AntdTable } from './ui/AntdTable'
