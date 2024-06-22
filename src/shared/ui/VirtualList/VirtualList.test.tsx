@@ -1,4 +1,3 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { VirtualList } from './index'
 import { Button } from 'antd'
@@ -86,8 +85,7 @@ describe('VirtualList', () => {
 
     })
 
-    it('render last element on scroll', async () => {
-        
-    })
+    // it('render last element on scroll', async () => {
+    // })
 
 })
